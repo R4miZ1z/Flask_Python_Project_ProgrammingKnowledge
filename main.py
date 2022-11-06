@@ -2,13 +2,13 @@ from flask import Blueprint, render_template
 
 main = Blueprint('main',__name__)
 
-@main.route("/'")
+@main.route("/")
 def index():
-    return "Hello, World!"
+    return render_template("index.html")
 
 
 
 
 @main.route("/profile")
 def profile():
-    return "Profile Here!"
+    return render_template("profile.html")
